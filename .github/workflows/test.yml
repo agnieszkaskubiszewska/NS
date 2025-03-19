@@ -28,10 +28,6 @@ jobs:
     - name: Install dependencies
       run: npm ci
       
-    - name: Create env file
-      run: |
-        echo "API_URL=${{ secrets.API_URL }}" > .env
-      
     - name: Run tests
       env:
         API_URL: ${{ secrets.API_URL }}
@@ -41,7 +37,7 @@ jobs:
       if: always()
       uses: actions/upload-artifact@v4
       with:
-        name: test-results
+        name: test-results-${{ github.run_id }}
         path: |
           coverage/
           test-results/ 
