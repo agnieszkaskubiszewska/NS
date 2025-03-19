@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="10" failures="0" errors="0" time="2.835">
+  <testsuite name="NordVPN API Tests" errors="0" failures="0" skipped="0" timestamp="2025-03-19T16:54:13" time="2.798" tests="10">
+    <testcase classname="NordVPN API Tests should return a 200 status" name="NordVPN API Tests should return a 200 status" time="0.321">
+    </testcase>
+    <testcase classname="NordVPN API Tests should return correct data structure" name="NordVPN API Tests should return correct data structure" time="0.276">
+    </testcase>
+    <testcase classname="NordVPN API Tests should return correct data types" name="NordVPN API Tests should return correct data types" time="0.267">
+    </testcase>
+    <testcase classname="NordVPN API Tests should return valid IP format" name="NordVPN API Tests should return valid IP format" time="0.237">
+    </testcase>
+    <testcase classname="NordVPN API Tests should return valid geographic coordinates" name="NordVPN API Tests should return valid geographic coordinates" time="0.241">
+    </testcase>
+    <testcase classname="NordVPN API Tests should respond within reasonable time" name="NordVPN API Tests should respond within reasonable time" time="0.241">
+    </testcase>
+    <testcase classname="NordVPN API Tests should return correct headers" name="NordVPN API Tests should return correct headers" time="0.253">
+    </testcase>
+    <testcase classname="NordVPN API Tests should contain valid ISO country code" name="NordVPN API Tests should contain valid ISO country code" time="0.246">
+    </testcase>
+    <testcase classname="NordVPN API Tests should return non-empty city name" name="NordVPN API Tests should return non-empty city name" time="0.245">
+    </testcase>
+    <testcase classname="NordVPN API Tests should handle invalid URL properly" name="NordVPN API Tests should handle invalid URL properly" time="0.236">
+    </testcase>
+  </testsuite>
+</testsuites>
