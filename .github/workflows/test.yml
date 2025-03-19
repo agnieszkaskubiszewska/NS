@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [ main, master ]
   schedule:
-    - cron: '0 */12 * * *'  # Uruchamia testy co 12 godzin
+    - cron: '0 */12 * * *' 
 
 jobs:
   test:

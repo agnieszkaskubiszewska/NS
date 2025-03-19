@@ -7,8 +7,6 @@ describe('NordVPN API Tests', () => {
   // Test 1: Check if the endpoint returns a 200 status
   test('should return a 200 status', async () => {
     const response = await axios.get(API_URL);
-    console.log(response.status);
-    console.log(response.data);
     expect(response.status).toBe(200);
   });
 
