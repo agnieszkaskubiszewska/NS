@@ -59,15 +59,15 @@ describe('NordVPN API Tests', () => {
     const response = await axios.get(API_URL);
     const data = response.data;
 
-    // Sprawdź podstawowe informacje o IP
+    // check if the response contains ip
     expect(data.ip).toBeDefined();
 
-    // Sprawdź czy zwracane są informacje geolokalizacyjne
+    // check if the response contains country, country_code, city
     expect(data.country).toBeDefined();
     expect(data.country_code).toBeDefined();
     expect(data.city).toBeDefined();
 
-    // Sprawdź czy format IP jest poprawny
+    // Check if IP format is correct
     const ipv4Regex = /^(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/;
     const ipv6Regex = /^(?:[A-F0-9]{1,4}:){7}[A-F0-9]{1,4}$/i;
 
@@ -88,7 +88,6 @@ describe('NordVPN API Tests', () => {
     const response = await axios.get(API_URL);
     expect(response.headers).toHaveProperty('strict-transport-security');
 
-    // Sprawdzamy obecność CSP bez warunkowego expect
     const hasCSP = response.headers['content-security-policy'] !== undefined;
     expect(hasCSP || true).toBe(true); // zawsze przejdzie, ale loguje informację
     if (!hasCSP) {
@@ -101,7 +100,6 @@ describe('NordVPN API Tests', () => {
     const response = await axios.get(API_URL);
     const validThreatLevels = ['low', 'medium', 'high', 'none'];
 
-    // Sprawdzamy threat_level bez warunkowego expect
     const threatLevel = response.data.threat_level;
     const isValidThreatLevel =
       !threatLevel || validThreatLevels.includes(threatLevel.toLowerCase());
