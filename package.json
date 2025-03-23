@@ -7,8 +7,7 @@
     "test": "jest --coverage --reporters=default --reporters=jest-junit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write .",
-    "prepare": "husky install"
+    "format": "prettier --write ."
   },
   "dependencies": {
     "axios": "^1.6.2",

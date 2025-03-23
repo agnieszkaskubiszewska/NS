@@ -1,4 +1,6 @@
 node_modules/
 .env
 config/config.js
-coverage/ 
+coverage/
+test-results/
+junit.xml 
