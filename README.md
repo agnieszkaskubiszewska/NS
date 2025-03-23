@@ -27,12 +27,13 @@ Automated test suite for NordVPN's IP Insights API endpoint. This project provid
 ## Setup
 
 1. Clone the repository:
-git clone https://github.com/agnieszkaskubiszewska/NS.git
-cd NS
+   git clone https://github.com/agnieszkaskubiszewska/NS.git
+   cd NS
 2. Install dependencies:
-npm install
+   npm install
 3. Set up environment variables:
-cp .env.example .env
+   cp .env.example .env
 
 ## Run tests:
+
 npm test
