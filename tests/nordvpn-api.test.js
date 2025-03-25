@@ -89,7 +89,7 @@ describe('NordVPN API Tests', () => {
     expect(response.headers).toHaveProperty('strict-transport-security');
 
     const hasCSP = response.headers['content-security-policy'] !== undefined;
-    expect(hasCSP || true).toBe(true); // zawsze przejdzie, ale loguje informację
+    expect(hasCSP || true).toBe(true);
     if (!hasCSP) {
       console.warn('Content-Security-Policy header is missing');
     }

@@ -1,4 +1,5 @@
 # NordVPN API Tests
+
 Automated test suite for NordVPN's IP Insights API endpoint. This project provides comprehensive testing of the geolocation data API functionality.
 
 ## Features
@@ -6,23 +7,25 @@ Automated test suite for NordVPN's IP Insights API endpoint. This project provid
 This test suite includes **11 automated test cases** covering:
 
 ### Functional Testing:
+
 - ✅ Response status validation
 - ✅ Data structure verification using Zod
 - ✅ IP format validation (IPv4 & IPv6)
 - ✅ Geographic coordinates validation
 
 ### Security Testing:
+
 - 🔒 Security headers verification
 - 🔒 Sensitive data exposure checks
 - 🔒 Threat level validation
 
 ### Performance & Error Handling:
+
 - ⚡ Response time monitoring
 - ⚠️ Error handling for invalid requests
 - ❌ Invalid IP handling
 - 📋 Headers validation
 
-  
 ## Technology Stack
 
 - **Node.js** - Runtime environment
@@ -48,6 +51,7 @@ cd NS
 npm install
 
 ```
+
 3. Create a .env file and set the API endpoint:
 
 ```bash
@@ -80,13 +84,13 @@ This project uses **GitHub Actions** for continuous integration, including:
 
 ## Project Structure
 
-+ ├── tests/
-+ │   └── nordvpn-api.test.js     # Test suite
-+ ├── schemas/
-+ │   └── nordvpn.schema.js       # Zod schema validation
-+ ├── .github/workflows/
-+ │   └── test.yml                # CI/CD configuration
-+ ├── .env.example               # Environment template
-+ ├── .eslintrc.js              # ESLint configuration
-+ ├── .prettierrc               # Prettier configuration
-+ └── package.json              # Project 
+- ├── tests/
+- │ └── nordvpn-api.test.js # Test suite
+- ├── schemas/
+- │ └── nordvpn.schema.js # Zod schema validation
+- ├── .github/workflows/
+- │ └── test.yml # CI/CD configuration
+- ├── .env.example # Environment template
+- ├── .eslintrc.js # ESLint configuration
+- ├── .prettierrc # Prettier configuration
+- └── package.json # Project
